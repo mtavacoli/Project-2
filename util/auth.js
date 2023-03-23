@@ -17,3 +17,11 @@ const hashPassword = (password) => {
 };
 
 module.exports = hashPassword;
+
+const bcrypt = require('bcryptjs');
+// Compares entered password with stored password
+const comparePassword = (password, hashedPassword) => {
+    return bcrypt.compareSync(password, hashedPassword);
+};
+
+module.exports = comparePassword;
