@@ -1,5 +1,24 @@
 const router = require("express").Router();
+<<<<<<< HEAD:controllers/api/userRoutes.js
 const { User } = require("../../models/user");
+=======
+const { User } = require("../models/user");
+
+router.post("/", async (req, res) => {
+  try {
+    const userData = await User.create(req.body);
+
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
+
+      res.status(200).json(userData);
+    });
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+>>>>>>> 603cbd3fc8edf877cc9791d577096164cfb13520:controllers/userRoutes.js
 
 router.post("/login", async (req, res) => {
   try {
