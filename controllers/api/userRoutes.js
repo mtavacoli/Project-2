@@ -1,9 +1,5 @@
 const router = require("express").Router();
-<<<<<<< HEAD:controllers/api/userRoutes.js
 const { User } = require("../../models/user");
-=======
-const { User } = require("../models/user");
-
 router.post("/", async (req, res) => {
   try {
     const userData = await User.create(req.body);
@@ -18,7 +14,6 @@ router.post("/", async (req, res) => {
     res.status(400).json(err);
   }
 });
->>>>>>> 603cbd3fc8edf877cc9791d577096164cfb13520:controllers/userRoutes.js
 
 router.post("/login", async (req, res) => {
   try {
