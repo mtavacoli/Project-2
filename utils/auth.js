@@ -8,20 +8,3 @@ const withAuth = (req, res, next) => {
 };
 
 module.exports = withAuth;
-
-const bcrypt = require('bcryptjs');
-// Hashes and salts password before storing in database
-const hashPassword = (password) => {
-    const salt = bcrypt.genSaltSync(10);
-    return bcrypt.hashSync(password, salt);
-};
-
-module.exports = hashPassword;
-
-const bcrypt = require('bcryptjs');
-// Compares entered password with stored password
-const comparePassword = (password, hashedPassword) => {
-    return bcrypt.compareSync(password, hashedPassword);
-};
-
-module.exports = comparePassword;
