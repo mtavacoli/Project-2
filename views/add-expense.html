@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add-Expense</title>
+  </head>
+  <body>
+    <main>
+      <div class="total">
+        <p>Total Money Spent:</p>
+        <p>0$</p>
+      </div>
+      <form action="">
+        <h2>Add-Expense</h2>
+        <div class="main">
+          <div class="expenses">
+            <label for="">Category: </label>
+            <select id="category" name="category">
+              <option value="home and utilities">Home and Utilities</option>
+              <option value="transportation">Transportation</option>
+              <option value="groceries">Groceries</option>
+              <option value="personal and family care">
+                Personal and Family Care
+              </option>
+              <option value="health">Health</option>
+              <option value="insurance">Insurance</option>
+              <option value="restaurants and dining">
+                Restaurants and Dining
+              </option>
+              <option value="shopping and entertainment">
+                Shopping and Entertainment
+              </option>
+              <option value="travel">Travel</option>
+              <option value="cash checks and misc">
+                Cash, Checks and Misc
+              </option>
+              <option value="giving">Giving</option>
+              <option value="business expenses">Business Expenses</option>
+              <option value="education">Education</option>
+              <option value="finance">Finance</option>
+              <option value="uncategorized">Uncategorized</option>
+            </select>
+            <input
+              type="text"
+              name="description"
+              id="description"
+              placeholder="Describe here"
+            />
+            <input type="text" name="amount" id="amount" placeholder="Amount" />
+            <button type="submit">Add</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
