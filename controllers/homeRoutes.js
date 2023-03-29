@@ -4,8 +4,11 @@ const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
   try {
+    //  use User.findOne()
     const userData = await User.findAll({
       attributes: { exclude: ["password"] },
+      // include the data from the Expense model
+      // using the include property, i.e. include:
       order: [["name", "ASC"]],
     });
 
