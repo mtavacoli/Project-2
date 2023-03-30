@@ -1,10 +1,10 @@
 <div class="row py-5">
   <div class="col-md-11 mx-auto" style="max-width: 880px;">
+    
 
-    {{#if beginner}}
+{{#if beginner}}
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      You don't have any record in this month yet. Try to <a href="/records/new?type={{type}}">add {{type}}</a> now
-      or choose another month to filter!
+    
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -13,14 +13,13 @@
 
     {{#if noFilterResult}}
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      No result found for the selected {{selectedDate}} {{selectedCategory}}. Try to use other month or category filter.
+     {{selectedDate}} {{selectedCategory}}. 
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
     {{/if}}
 
-    {{!-- Filter --}}
     <div class="mt-4">
       <form action="/records/{{type}}"
         class="input-group row {{#if (eq type 'expense')}}{{else}}d-flex justify-content-end{{/if}}"
@@ -37,7 +36,7 @@
           </select>
         </div>
 
-        {{!-- Category --}}
+        {{!-- Expense Category --}}
         {{#if (eq type 'expense')}}
         <div class="col-sm-6">
           <select class="custom-select ml-2" name="category">
@@ -71,25 +70,24 @@
       <a class="btn btn-info" href="/records/new?type={{type}}">Add {{type}}</a>
     </div>
 
-    {{!-- Record count --}}
+    {{!-- Record found --}}
     <div class="mx-2 mb-3 d-flex justify-content-end">
       <small style="font-weight:500">Found {{totalRecords}} {{type}}s</small>
     </div>
 
-    {{!-- Render list --}}
+    {{!-- list --}}
     <div class="mx-2">
       {{#each records}}
       <div class="row flex-md-nowrap py-2 record" style="margin: 0;">
-        {{!-- Icon --}}
         <div class="col-2 d-flex justify-content-center align-items-center">
           <i class="{{ this.category.icon }} fa-2x record-icon"></i>
         </div>
-        {{!-- Name & date --}}
+        {{!-- Name and date --}}
         <div class="col-3 pl-3">
           <h5 class="record-name">{{ this.name }}</h5>
           <small>{{ this.date }}</small>
         </div>
-        {{!-- Amount --}}
+        {{!--Total Amount --}}
         <div class="col-4 d-flex align-items-center justify-content-end">
           <div class="d-flex flex-column align-items-end">
             <h5 class="record-amount">${{#if (eq this.type 'expense')}}-{{/if}}{{ this.amount }}</h5>
@@ -143,4 +141,4 @@
     </div>
 
   </div>
-</div>
+</div> 
