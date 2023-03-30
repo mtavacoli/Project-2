@@ -16,6 +16,7 @@
     "chart.js": "^4.2.1",
     "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.0.3",
+    "ember-truth-helpers": "^3.1.1",
     "express": "^4.18.2",
     "express-handlebars": "^7.0.2",
     "express-session": "^1.17.3",
