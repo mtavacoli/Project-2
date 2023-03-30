@@ -88,21 +88,21 @@ You and your group will use everything you’ve learned over the past six weeks 
 
   - Use Node.js and Express.js to create a RESTful API.
 
-   - Use Handlebars.js as the templating engine.
+  - Use Handlebars.js as the templating engine.
 
-    - Use MySQL and the Sequelize ORM for the database.
+  - Use MySQL and the Sequelize ORM for the database.
 
-     - Have both GET and POST routes for retrieving and adding new data.
+  - Have both GET and POST routes for retrieving and adding new data.
 
-     - Be deployed using Heroku (with data).
+  - Be deployed using Heroku (with data).
 
-     - Use at least one new library, package, or technology that we haven’t discussed.
+  - Use at least one new library, package, or technology that we haven’t discussed.
 
-     - Have a polished UI.
+  - Have a polished UI.
 
-     - Have a folder structure that meets the MVC paradigm.
+  - Have a folder structure that meets the MVC paradigm.
 
-     - Include authentication (express-session and cookies).
+  - Include authentication (express-session and cookies).
 
   
       
@@ -136,7 +136,7 @@ You and your group will use everything you’ve learned over the past six weeks 
 
   # This project has been deployed to GitHub, here is the link:
 
-  * 
+  * https://github.com/mtavacoli/Project-2/tree/develop
   
   # Project 2 Screenshots
   
