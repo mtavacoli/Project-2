@@ -20,11 +20,10 @@
     </div>
     {{/if}}
 
-    {{!-- Filter --}}
     <div class="mt-4">
       <form action="/records" class="input-group row" onchange="submit();">
 
-        {{!-- Date --}}
+        {{!-- All months --}}
         <div class="col-sm-6 mb-3">
           <select class="custom-select ml-2" name="date">
             <option value="all">All Months</option>
@@ -34,7 +33,7 @@
           </select>
         </div>
 
-        {{!-- Category --}}
+        {{!--All  Category --}}
         <div class="col-sm-6">
           <select class="custom-select ml-2" name="category">
             <option value="" selected>All Categories</option>
@@ -52,7 +51,7 @@
       </form>
     </div>
 
-    {{!-- Charts --}}
+   
     {{#if home}}
     <div class="mt-4 mb-5 mx-2 row"
       style="background: white;border-radius: 10px;box-shadow: 3px 4px 5px 0px #05119a14;">
