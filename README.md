@@ -1,5 +1,7 @@
 # Project-2
 
+## Expense Tracker
+
 This is the second project in our bootcamp. In this project, we created an application that allows users to track their expenses.
 
 
@@ -172,4 +174,4 @@ Links to the deployed application and the GitHub repository.
  
  * Git Hub Profile: Matin Tavacoli
  
- * Challenge 15-16 |  Interactive Full-Stack Project.
+ * Challenge 15-16 |  Interactive Full-Stack Project.Expense Tracker
