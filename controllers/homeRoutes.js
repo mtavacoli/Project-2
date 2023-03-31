@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User } = require("../models/user");
+const User = require("../models/user");
 const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
@@ -14,6 +14,7 @@ router.get("/", withAuth, async (req, res) => {
 
     const users = userData.map((project) => project.get({ plain: true }));
 
+    console.log(users);
     res.render("homepage", {
       users,
       logged_in: req.session.logged_in,
@@ -24,6 +25,7 @@ router.get("/", withAuth, async (req, res) => {
 });
 
 router.get("/login", (req, res) => {
+  console.log("hit login");
   if (req.session.logged_in) {
     res.redirect("/");
     return;
