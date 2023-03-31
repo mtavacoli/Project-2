@@ -138,7 +138,8 @@ You and your group will use everything you’ve learned over the past six weeks 
 
   # This project has been deployed to GitHub, here is the link:
 
-  * https://github.com/mtavacoli/Project-2/tree/develop
+  * https://github.com/mtavacoli/Project-2/tree/wento
+  * 
   
   # Project 2 Screenshots
   
